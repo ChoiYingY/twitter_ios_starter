@@ -18,9 +18,13 @@ class HomeTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadTweets()
+        self.loadTweets()
         myRefreshControl.addTarget(self, action: #selector(loadTweets), for: .valueChanged)
-        tableView.refreshControl = myRefreshControl
+        self.tableView.refreshControl = myRefreshControl
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
     
     @objc func loadTweets() {
@@ -28,7 +32,7 @@ class HomeTableViewController: UITableViewController {
         let myURL = "https://api.twitter.com/1.1/statuses/home_timeline.json"
         let myParams = ["count": numberOfTweet]
         
-        TwitterAPICaller.client?.getDictionariesRequest(url: myURL, parameters: myParams, success: { (tweets: [NSDictionary]) in
+        TwitterAPICaller.client?.getDictionariesRequest(url: myURL, parameters: myParams as [String : Any], success: { (tweets: [NSDictionary]) in
             self.tweetArray.removeAll()
             for tweet in tweets {
                 self.tweetArray.append(tweet)
@@ -36,7 +40,7 @@ class HomeTableViewController: UITableViewController {
             self.tableView.reloadData()
             self.myRefreshControl.endRefreshing()
         }, failure: { (Error) in
-            print("Could not retreive tweets! Oh no!!")
+            print("Error: \(Error.localizedDescription)")
         })
     }
     
@@ -44,14 +48,14 @@ class HomeTableViewController: UITableViewController {
         let myURL = "https://api.twitter.com/1.1/statuses/home_timeline.json"
         numberOfTweet = numberOfTweet + 20
         let myParams = ["count": numberOfTweet]
-        TwitterAPICaller.client?.getDictionariesRequest(url: myURL, parameters: myParams, success: { (tweets: [NSDictionary]) in
+        TwitterAPICaller.client?.getDictionariesRequest(url: myURL, parameters: myParams as [String : Any], success: { (tweets: [NSDictionary]) in
             self.tweetArray.removeAll()
             for tweet in tweets {
                 self.tweetArray.append(tweet)
             }
             self.tableView.reloadData()
         }, failure: { (Error) in
-            print("Could not retreive tweets! Oh no!!")
+            print("Error: \(Error.localizedDescription)")
         })
     }
     
