@@ -137,13 +137,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Home" id="UmK-wI-ipS">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" style="plain" id="78R-0Y-JeC">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="78R-0Y-JeC">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="onLogout:" destination="ZxB-0h-wnG" id="YMw-28-Vh8"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Tweet" style="plain" id="dgI-aW-SMi">
+                        <barButtonItem key="rightBarButtonItem" title="Tweet" id="dgI-aW-SMi">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="hnI-YS-2Y3" kind="presentation" id="r2Z-QG-kNu"/>
@@ -203,7 +203,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oxn-iO-Na4">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" style="plain" id="sTX-ny-BLz">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="sTX-ny-BLz">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="cancel:" destination="9Az-9H-6Sf" id="KaV-CX-XcO"/>
