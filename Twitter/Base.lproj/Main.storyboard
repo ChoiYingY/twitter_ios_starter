@@ -71,13 +71,13 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Tweet Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aS4-HL-ovF">
-                                            <rect key="frame" x="67" y="11" width="87" height="16"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                            <rect key="frame" x="67" y="11" width="63" height="11"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="9"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXE-8J-wKp">
-                                            <rect key="frame" x="67" y="31" width="292" height="58"/>
+                                            <rect key="frame" x="67" y="26" width="292" height="63"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -89,6 +89,9 @@
                                                 <constraint firstAttribute="width" constant="30" id="zkQ-lt-BYE"/>
                                             </constraints>
                                             <state key="normal" title="favButton" image="favor-icon"/>
+                                            <connections>
+                                                <action selector="favoriteTweet:" destination="Df2-yh-N6e" eventType="touchUpInside" id="6xQ-gf-2oO"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcL-SV-6yH">
                                             <rect key="frame" x="279" y="99" width="30" height="30"/>
@@ -97,6 +100,9 @@
                                                 <constraint firstAttribute="height" constant="30" id="BH9-Lh-WkM"/>
                                             </constraints>
                                             <state key="normal" title="retweetButton" image="retweet-icon"/>
+                                            <connections>
+                                                <action selector="retweet:" destination="Df2-yh-N6e" eventType="touchUpInside" id="Baz-BK-jIA"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -117,7 +123,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="favButton" destination="vaD-z2-ag7" id="pty-Q2-wOr"/>
                                     <outlet property="profileImageView" destination="0QZ-4X-4vH" id="aRl-yR-E3x"/>
+                                    <outlet property="retweetButton" destination="gcL-SV-6yH" id="q3E-qy-9o9"/>
                                     <outlet property="tweetContent" destination="gXE-8J-wKp" id="Fgs-Sb-qNj"/>
                                     <outlet property="userNameLabel" destination="aS4-HL-ovF" id="1ma-8i-IVo"/>
                                 </connections>
