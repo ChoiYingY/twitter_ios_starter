@@ -101,7 +101,7 @@
                                             </constraints>
                                             <state key="normal" title="retweetButton" image="retweet-icon"/>
                                             <connections>
-                                                <action selector="retweet:" destination="Df2-yh-N6e" eventType="touchUpInside" id="Baz-BK-jIA"/>
+                                                <action selector="retweet:" destination="Df2-yh-N6e" eventType="touchUpInside" id="1TC-hO-Smr"/>
                                             </connections>
                                         </button>
                                     </subviews>
