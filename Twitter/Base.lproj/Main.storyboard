@@ -77,16 +77,16 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXE-8J-wKp">
-                                            <rect key="frame" x="67" y="26" width="292" height="63"/>
+                                            <rect key="frame" x="67" y="26" width="292" height="73"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaD-z2-ag7">
-                                            <rect key="frame" x="319" y="99" width="30" height="30"/>
+                                            <rect key="frame" x="329" y="109" width="25" height="25"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="30" id="NWp-lc-D2t"/>
-                                                <constraint firstAttribute="width" constant="30" id="zkQ-lt-BYE"/>
+                                                <constraint firstAttribute="height" constant="25" id="NWp-lc-D2t"/>
+                                                <constraint firstAttribute="width" constant="25" id="zkQ-lt-BYE"/>
                                             </constraints>
                                             <state key="normal" title="favButton" image="favor-icon"/>
                                             <connections>
@@ -94,10 +94,10 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcL-SV-6yH">
-                                            <rect key="frame" x="279" y="99" width="30" height="30"/>
+                                            <rect key="frame" x="299" y="109" width="25" height="25"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="30" id="7Qn-fv-tJp"/>
-                                                <constraint firstAttribute="height" constant="30" id="BH9-Lh-WkM"/>
+                                                <constraint firstAttribute="width" constant="25" id="7Qn-fv-tJp"/>
+                                                <constraint firstAttribute="height" constant="25" id="BH9-Lh-WkM"/>
                                             </constraints>
                                             <state key="normal" title="retweetButton" image="retweet-icon"/>
                                             <connections>
@@ -111,13 +111,13 @@
                                         <constraint firstItem="0QZ-4X-4vH" firstAttribute="leading" secondItem="zI7-e2-rnz" secondAttribute="leadingMargin" id="6Id-Xa-vwT"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="0QZ-4X-4vH" secondAttribute="trailing" constant="300" id="74z-Xg-L3t"/>
                                         <constraint firstItem="0QZ-4X-4vH" firstAttribute="top" secondItem="zI7-e2-rnz" secondAttribute="topMargin" id="8JS-XN-2S4"/>
-                                        <constraint firstItem="vaD-z2-ag7" firstAttribute="leading" secondItem="gcL-SV-6yH" secondAttribute="trailing" constant="10" id="8jM-xM-EIy"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="vaD-z2-ag7" secondAttribute="bottom" constant="10" id="Hsd-rn-fwa"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="vaD-z2-ag7" secondAttribute="trailing" constant="10" id="ZZm-w3-NxM"/>
+                                        <constraint firstItem="vaD-z2-ag7" firstAttribute="leading" secondItem="gcL-SV-6yH" secondAttribute="trailing" constant="5" id="8jM-xM-EIy"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="vaD-z2-ag7" secondAttribute="bottom" constant="5" id="Hsd-rn-fwa"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="vaD-z2-ag7" secondAttribute="trailing" constant="5" id="ZZm-w3-NxM"/>
                                         <constraint firstItem="gXE-8J-wKp" firstAttribute="leading" secondItem="0QZ-4X-4vH" secondAttribute="trailing" constant="8" id="bI9-EI-kJY"/>
                                         <constraint firstItem="aS4-HL-ovF" firstAttribute="leading" secondItem="0QZ-4X-4vH" secondAttribute="trailing" constant="8" id="fDq-Av-dWf"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="0QZ-4X-4vH" secondAttribute="bottom" id="ihk-iw-A4Y"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="gcL-SV-6yH" secondAttribute="bottom" constant="10" id="jHO-mi-SkC"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="gcL-SV-6yH" secondAttribute="bottom" constant="5" id="jHO-mi-SkC"/>
                                         <constraint firstItem="vaD-z2-ag7" firstAttribute="top" secondItem="gXE-8J-wKp" secondAttribute="bottom" constant="10" id="qSA-Bd-mhq"/>
                                         <constraint firstItem="gXE-8J-wKp" firstAttribute="top" secondItem="aS4-HL-ovF" secondAttribute="bottom" constant="4" id="qm4-c6-j7c"/>
                                     </constraints>
